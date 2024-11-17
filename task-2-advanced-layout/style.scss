@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+$shadow: #070410 ;
+$btn: #eef36a;
+$card: #ffffff;
+$bg: #4dccbd;
+$header: #231651;
+
+html{
+    box-sizing: border-box;
+    background-color: $bg;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, button{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-size: 3em;
+}
+
+button{
+    font-size: 2em;
+    padding: 16px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-top: auto;
+    border:  2px solid $btn;
+    background-color: $header;
+    color: $btn;
+    position: relative;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0 0 16px 0;
+}
+
+// header
+header{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: $header;
+    color: #ffffff;
+    box-shadow: 0 0 0 16px $shadow; 
+}
+
+nav{
+    display: flex;
+    ul {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+    
+        li{
+            list-style: none;
+            padding: 0 48px;
+        }
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+// placement of cards
+.content{
+    // border: 2px solid red;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    gap: 16px;
+    padding: 48px;
+}
+
+// card containers
+.card1{
+    grid-column: span 2;
+    background-color: $card;
+    box-shadow: 10px 10px $shadow;
+    margin: 16px;
+
+
+    img{
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.card2{
+    grid-row: span 1;
+    background-color: $card;
+    margin: 16px;
+    box-shadow: 10px 10px  $shadow;
+    
+    .content-container{
+        height: 430px;
+    }
+    
+}
+
+.card3{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: $card;
+    margin: 16px;
+    box-shadow: 10px 10px  $shadow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+
+}
+
+// content containers
+.content-container{
+    // border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 16px; 
+}
+
+// Tablet
+@media(min-width: 720px) and (max-width: 1024px) {
+
+
+    nav ul li{
+        padding: 0 32px;
+    }
+    
+    .content{
+        padding: 32px;
+        box-sizing: border-box;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .card1, .card2, .card3{
+        grid-column: span 1;
+        grid-row: span 1;
+        display: block;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .content-container{
+            min-height: 550px;
+            max-height: 680px;
+            margin: auto;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+        }
+    }
+
+}
+
+// MOBILE
+@media(min-width: 360px) and (max-width: 720px){
+    header, .card1, .card2, .card3{
+        box-shadow: none;
+    }
+
+    .content{
+        padding: 0;
+        display: block;
+    }
+
+    .card1, .card2, .card3{
+        display: block;
+        margin: 16px 0;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .content-container{
+            height: auto;
+            margin: auto;
+            justify-content: space-between;
+        }
+    }
+
+    nav{
+    
+        ul{
+            display: block;
+            z-index: -1;
+
+            li{
+                padding: 0;
+            }
+        }
+    }
+}
