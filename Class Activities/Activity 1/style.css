@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 7, 9);
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; 
+    height: 100vh
+}
+
+.row{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+img{
+    height: auto;
+    width: 10%;
+    filter: grayscale(100%);
+    margin: 10px;
+    transition: all .5s ease-in-out; 
+}
+
+img:hover{
+    filter: none;
+    transform: scale(1.1); 
+}

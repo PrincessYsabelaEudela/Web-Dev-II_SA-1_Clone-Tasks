@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>title</title>
+</head>
+<body>
+
+    <!-- HEADING TAG -->
+    <h1>Heading</h1> 
+    <p> HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags. &lt;hl&gt; defines the most important heading. &lt;h6&gt; defines the least important heading: </p>
+    <h1>Heading 1</h1>
+    <h1 style="font-size:60px">Stylized Heading 1</h1> 
+    <h2>Heading 2</h2>
+    <h2 style="font-size:40px">Stylized Heading 2</h2> 
+    <h3>Heading 3</h3>
+    <h3 style="font-size:30px">Stylized Heading 3</h3> 
+    <h4>Heading 4</h4>
+    <h4 style="font-size:20px">Stylized Heading 4</h4> 
+    <h5>Heading 5</h5>
+    <h5 style="font-size:10px">Stylized Heading 5</h5> 
+    <h6>Heading 6</h6>
+    <h6 style="font-size:5px">Stylized Heading 6</h6>
+    <h2>Paragraphs</h2>
+    <!-- PARAGRAPH TAG -->
+    <p>HTML paragraphs are defined with the &lt;p&gt; tag:</p>
+    <p>My first paragraph.</p>
+    <p>My second paragraph <br> Breaking the paragraph with the &lt;br&gt; tag</p>
+
+    <h3>Links</h3>
+    <p>HTML links are defined with the &lt;a&gt; tag. The link address is specified in the href attribute:</p>
+    <!-- ANCHOR TAG FOR LINKS -->
+    <a href="https://www.w3schools.com">This is a link</a>
+    <a href="https://www.w3schools.com/html/html_basic.asp">This is a link</a>
+    <h2>The href Attribute</h2>
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <br>
+    <img src="img.jpg" width="300" height="auto" alt="Strawberry crepe ">
+    <!-- STYLIZED P TAGS -->
+    <p style="color: red;">This is a red paragraph.</p>
+    <p style="color: orange;">This is an orange paragraph.</p>
+    <!-- TITLE ATTRIBUTE -->
+    <p title="I'm a tooltip">A paragraph with a tooltip. The value of the title attribute will be displayed as a tooltip when you mouse over the element.</p>
+
+    <!-- This is a comment -->
+    <p>This is a paragraph.</p>
+    <!-- Comments are not displayed in the browser --> 
+    <p>This <!-- Inline comment --> is a paragraph.</p> 
+    <!-- <p>Hiden contents</p> --> <p>This is a paragraph.</p>
+
+    <!-- B TAG -->
+    <p><b>This text is bold</b></p>
+    <!-- I TAG -->
+    <p><i>This text is italic</i></p>
+    <!-- EM TAG -->
+    <p><em>This text is emphasized, A screen reader will pronounce the words with an emphasis, using verbal stress.</em></p>
+    <!-- SUBSCIPT AND SUPERSCRIPT TAG -->
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    <!-- STRONG TAG -->
+    <p><strong>This text is important!</strong></p>
+    <!-- SMALL TAG -->
+    <p><small>This is some smaller text.</small></p>
+    <!-- MARK TAG (HIGHLIGHT) -->
+    <p>The HTML mark element defines text that should be <mark>marked or highlighted</mark>. </p>
+    <!-- DEL TAG (STRIKE THROUGH) -->
+    <p> text that has been deleted from a document. Browsers will usually <del>strike a line</del> through deleted text.</p>
+    <!-- INS TAG (UNDERLINE) -->
+    <p>defines a text that has been inserted into a document. Browsers will usually <ins>underline</ins> inserted text</p>
+
+    <!-- INLINE CSS -->
+    <p>I am normal</p>
+    <p style="background-color:tomato;">I have a background color.</p>
+    <p style="color:purple;">I am purple</p>
+    <p style="color:green; ">I am green</p>
+    <p style="font-size:50px;">I am big</p>
+    <p style="font-family: courier;">I am a different font.</p>
+    <p style="text-align:center;">Centered paragraph.</p>
+    <p style="background-color:tomato; text-align: center; color:purple; font-size:50px; font-family: courier; text-align: center;"> Centered paragraph.</p>
+
+    <h1 style="background-color: Tomato;">Tomato</h1>
+    <h1 style="color: Orange;">Orange</h1>
+    <h1 style="border: 2px solid DodgerBlue;">DodgerBlue</h1>
+    <h1 style="background-color: rgb(255, 99, 71)">rgb(255, 99, 71)</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+
+
+    <!-- PRE TAG -->
+    <p>Ex 1:</p>
+    <pre>
+        My Bonnie lies over the ocean.
+        My Bonnie lies over the sea.
+        My Bonnie lies over the ocean.
+        Oh, bring back my Bonnie to me. 
+    
+    </pre>
+        <p>Ex 2:</p>
+        
+    <pre>
+        Hold fast to dreams
+        For if dreams die
+        Life is a broken-winged bird That cannot fly
+        Hold fast to dreams
+        For when dreams go
+        Life is a barren field
+        Frozen with snow
+    </pre>
+
+    <h1>List</h1>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+    
+            <ul style="list-style-type: square;">
+                <li>Black Tea</li>
+                <li>Earl Gray</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea
+            <ol start="20"> <!--Start at 20-->
+                <li>Black Tea</li>  
+                <li>Earl Gray</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2 style="font-size:10vw">Responsive Images</h1>
+    <p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+    <img src="img.jpg" style="width:100%;">
+    <p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</p>
+    <img src="img.jpg" style="max-width: 100%; height: auto;">
+
+    <h2>HTML Iframes</h2>
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8816077086567!2d55.898467774855334!3d25.741428509443537!2m3!1f0! 2f0!3f0!3m2!1i1024!21768!4f13.1!3m3!1m2!1s0x3ef67451f56ae4d7%3A0x9338a5c333829d48!2sBath%20Spa%20University!5e0!3m2!1sen!2sae!4v1727077675674!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no- referrer-when-downgrade"></iframe>
+
+</body>
+</html>
